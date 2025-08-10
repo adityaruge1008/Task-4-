@@ -13,7 +13,6 @@ This repository contains the configuration and testing of a basic firewall setup
 5. Tested the rules locally/remotely.
 6. Removed the block rule to restore original state.
 
-Files
 
-* `firewall_config.txt` — Contains the applied firewall rules and settings.
+
 

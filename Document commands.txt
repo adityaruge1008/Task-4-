@@ -1,0 +1,7 @@
+Step | Command | Purpose
+1 | sudo ufw enable | Enable firewall
+2 | sudo ufw status numbered | View active rules
+3 | sudo ufw deny 23/tcp | Block port 23
+4 | nc -vz localhost 23 | Test blocked port
+5 | sudo ufw allow 22/tcp | Allow SSH
+6 | sudo ufw delete deny 23/tcp | Remove block rule

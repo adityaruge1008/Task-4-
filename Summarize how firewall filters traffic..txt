@@ -1,0 +1,28 @@
+How a Firewall Filters Traffic – Summary
+A firewall acts as a security gatekeeper that monitors incoming and outgoing network traffic based on a set of predefined rules. It decides whether to allow or block traffic by examining packet details such as:
+
+Source IP address – where the traffic is coming from
+
+Destination IP address – where the traffic is going
+
+Protocol type – e.g., TCP, UDP, ICMP
+
+Port number – identifies the specific service (e.g., 22 for SSH, 80 for HTTP)
+
+Filtering Methods:
+Packet Filtering – Checks headers of packets against rules; simple and fast.
+
+Stateful Inspection – Tracks active connections and allows only valid packets that match existing sessions.
+
+Application Layer Filtering – Analyzes data inside packets for specific applications (e.g., blocking certain websites or file types).
+
+Function in Practice:
+Inbound filtering: Blocks unwanted traffic from entering the system, reducing the risk of attacks.
+
+Outbound filtering: Controls what data can leave the system, preventing unauthorized transmissions.
+
+In our  task:
+Blocking port 23 stopped Telnet traffic from entering.
+
+Allowing port 22 ensured SSH connections remained possible.
+
